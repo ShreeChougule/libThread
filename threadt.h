@@ -16,6 +16,7 @@ class thread_t {
  public:
   virtual ~thread_t();
   virtual int ThreadRun() = 0;
+  static void* thread_fun(void*);
   virtual void Start();
   virtual void Terminate();
 
