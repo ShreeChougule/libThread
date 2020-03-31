@@ -21,7 +21,7 @@ class thread_t {
   virtual void Terminate();
 
  private:
-  pthread_t ptid;
+  pthread_t ptid = NULL;
 };
 
 } /* namespace dev_core */
